@@ -1,0 +1,2 @@
+html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}#root{font-family:Roboto,sans-serif;line-height:1;background:-webkit-gradient(linear,right top,left bottom,from(#fff),to(#db7093));background:linear-gradient(to bottom left,#fff 0,#db7093);min-height:100vh}.container{padding:20px}.input-field{margin:50px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));grid-gap:15px;padding:15px;overflow:hidden}.item-image{height:20vh}.body2{margin:auto}
+/*# sourceMappingURL=main.cc1d42a6.chunk.css.map */

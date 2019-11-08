@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/batidora/static/css/main.cc1d42a6.chunk.css",
+    "main.js": "/batidora/static/js/main.e9eecf27.chunk.js",
+    "main.js.map": "/batidora/static/js/main.e9eecf27.chunk.js.map",
+    "runtime-main.js": "/batidora/static/js/runtime-main.ee54b444.js",
+    "runtime-main.js.map": "/batidora/static/js/runtime-main.ee54b444.js.map",
+    "static/css/2.764ccc25.chunk.css": "/batidora/static/css/2.764ccc25.chunk.css",
+    "static/js/2.9fd64a26.chunk.js": "/batidora/static/js/2.9fd64a26.chunk.js",
+    "static/js/2.9fd64a26.chunk.js.map": "/batidora/static/js/2.9fd64a26.chunk.js.map",
+    "index.html": "/batidora/index.html",
+    "precache-manifest.d39e44fb016c44c0cbd85052334fecb9.js": "/batidora/precache-manifest.d39e44fb016c44c0cbd85052334fecb9.js",
+    "service-worker.js": "/batidora/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/batidora/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.cc1d42a6.chunk.css.map": "/batidora/static/css/main.cc1d42a6.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee54b444.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.9fd64a26.chunk.js",
+    "static/css/main.cc1d42a6.chunk.css",
+    "static/js/main.e9eecf27.chunk.js"
+  ]
+}
