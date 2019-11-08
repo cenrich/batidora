@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Input } from '@material-ui/core'
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core';
 
 class Home extends Component  {
   state = {
@@ -15,31 +15,39 @@ class Home extends Component  {
 				`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`
 			)
 				.then((res) => res.json())
-        .then((res) => {
-          console.log(res.drinks)
-          this.setState({ searchResults: res.drinks })
-        })
-		}
-	}
-  
+        .then((res) => this.setState({ searchResults: res.drinks }))
+      }
+    }
+   
   render() {
-    console.log(this.state.searchResults)
     return (
       <Fragment>
         <input  placeholder='buscá tu cóctel favorito' 
                 value={this.state.searchInput}
                 onChange={this.handleSearchInput}
+                className='input-wf2'
         />
-        <ul>
+        <div className='grid'>
           {this.state.searchResults &&
 				    this.state.searchResults.map((e) => (
-					    <li key={e.idDrink}>
-						    {/* <a onClick={() => expandMovie(e.id)}>{e.title}</a> */}
-                {e.strDrink}
-					    </li>
+              <Card>
+                <CardActionArea className='item'>
+                  <CardMedia
+                    image={e.strDrinkThumb}
+                    className='item-image'
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant='h5' component='h2'>
+                      {e.strDrink}
+                    </Typography>
+                    <Typography variant='body2' color='textSecondary' component='p'>
+                      {e.strInstructions}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
 				))}
-        </ul>
-
+        </div>
       </Fragment>
   )}
 }
